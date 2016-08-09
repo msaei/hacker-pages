@@ -1,7 +1,7 @@
-Template.hackerList.onCreate(function hackerListOnCreated(){
+Template.hackerList.onCreated( function hackerListOncreated(){
 	Meteor.subscribe('hackers');
 
-})
+});
 
 
 Template.hackerList.helpers({

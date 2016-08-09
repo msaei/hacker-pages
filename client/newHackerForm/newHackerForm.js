@@ -16,8 +16,8 @@ Template.newHackerForm.events({
     }
 
     //console.log(newHacker);
-    Hackers.insert(newHackerForm);
-    alert('successfuly inserted');
+    const result = Hackers.insert(newHacker);
+    console.log(result);
   }
 
 });
