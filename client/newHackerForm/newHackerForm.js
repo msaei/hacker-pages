@@ -16,8 +16,9 @@ Template.newHackerForm.events({
     }
 
     //console.log(newHacker);
-    const result = Hackers.insert(newHacker);
-    console.log(result);
+    //const result = Hackers.insert(newHacker);
+    Meteor.call('hackers.insert',newHacker)
+    
   }
 
 });
